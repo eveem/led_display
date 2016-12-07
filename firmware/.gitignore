@@ -1,0 +1,6 @@
+usbdrv/
+usbconfig.h
+*.o
+*.elf
+*.hex
+*.swp
