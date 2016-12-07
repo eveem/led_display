@@ -13,7 +13,7 @@ public class BoxMessage {
         try
         {
         	Device[] devices = McuBoard.findBoards();
-        	
+
         	if (devices.length == 0) {
                 System.out.format("** Practicum board not found **\n");
                 return;
@@ -29,8 +29,8 @@ public class BoxMessage {
             
             String message = getMessage();
      	   	int[] decimalData = parseToDecimal(message);
-            
-     	   	for (int i = 1; i <= decimalData[0] * 5; i++) {
+     	   	
+     	   	for (int i = 0; i <= decimalData[0] * 5; i++) {
      	   		peri.sentMessage((short) i, (short) decimalData[i]);
      	   	}
         }
