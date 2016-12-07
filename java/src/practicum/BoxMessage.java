@@ -30,7 +30,7 @@ public class BoxMessage {
             String message = getMessage();
      	   	int[] decimalData = parseToDecimal(message);
             
-     	   	for (int i = 1; i < decimalData[0] * 5; i++) {
+     	   	for (int i = 1; i <= decimalData[0] * 5; i++) {
      	   		peri.sentMessage((short) i, (short) decimalData[i]);
      	   	}
         }
