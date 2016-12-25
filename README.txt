@@ -29,7 +29,7 @@ This Project is built by C and JAVA with these listing modules
 		- McuBoard
 		- JOptionPane
 
-Hardware used by this game:
+Hardware used in this project:
 	- Practicum Board (from 204223 subject)
 	- DC Motor
 	- Regulator Module
