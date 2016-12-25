@@ -10,9 +10,12 @@ Developer:
 
 File Description:
 	/firmware - Directory containing
-		eeprom.c - 
-		led_board.c - 
-		main.c - 
+                lib/eeprom.h - containing definition in eeprom.c
+                lib/led_board.h - containing definition in led_board.c
+                Makefile - make compiling source code and uploading source code to practicum board easiler
+                eeprom.c - EEPROM handling extended from avr/eeprom.h
+                led_board.c - containging source code to interact with led board for practicum board
+                main.c - containing source code that make practicum board can communication with computer and display text on led board
 	/java - Direcctory containing 
 		BoxMessage.java - show dialog input to get input and convert to 2 dimensional array for sent to board
 		McuBoard.java - config USB and contain read, write method to communicate with board
@@ -23,7 +26,9 @@ File Description:
 
 This Project is built by C and JAVA with these listing modules
 	- C
-		-
+		- avrlib
+                - usbdrv
+                - protothreads
 	- JAVA
 		- Practicum
 		- McuBoard
